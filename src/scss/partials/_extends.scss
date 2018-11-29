@@ -1,0 +1,197 @@
+%box-sizing-border-box {
+	@include box-sizing(border-box);
+}
+
+%box-sizing-content-box {
+	@include box-sizing(content-box);
+}
+
+%width-100-percent {
+	width: 100% !important;
+}
+
+%display-flex {
+	@include display-flex;
+}
+
+%flex-direction-column {
+	@include flex-direction-column;
+}
+
+%flex-direction-row {
+	@include flex-direction-row;
+}
+
+%justify-content-space-between {
+	@include justify-content(space-between);
+}
+
+%justify-content-center {
+	@include justify-content(center);
+}
+
+%justify-content-flex-end {
+	@include justify-content(flex-end);
+}
+
+%justify-content-flex-start {
+	@include justify-content(flex-start);
+}
+
+%justify-content-space-around {
+	@include justify-content(space-around);
+}
+
+%justify-self-flex-start {
+	@include justify-self(flex-start);
+}
+
+%justify-self-flex-end {
+	@include justify-self(flex-end);
+}
+
+%flex-wrap {
+	@include flex-wrap(wrap);
+}
+
+%flex-nowrap {
+	@include flex-wrap(nowrap);
+}
+
+%align-items-center {
+	@include align-items(center);
+}
+
+%align-items-flex-end {
+	@include align-items(flex-end);
+}
+
+%align-items-flex-start {
+	@include align-items(flex-start);
+}
+
+%align-items-baseline {
+	@include align-items(baseline);
+}
+
+%align-self-center {
+	@include align-self(center);
+}
+
+%align-self-flex-end {
+	@include align-self(flex-end);
+}
+
+%align-self-flex-start {
+	@include align-self(flex-start);
+}
+
+%no-margin {
+	margin: 0;
+}
+
+%no-padding {
+	padding: 0;
+}
+
+%section-h1-title {
+	padding-top: rem(90px);
+	padding-bottom: rem(13px);
+	@include font-family(CircularStd);
+	font-size: rem(46px);
+	font-weight: bold;
+	line-height: 1.22;
+	color: $text-color-dark;
+}
+
+%section-h3-title {
+	padding-bottom: rem(13px);
+	@include font-family(CircularStd);
+	font-size: rem(36px);
+	font-weight: bold;
+	line-height: 1.22;
+	color: $text-color-dark;
+}
+
+%section-h3-sub-title {
+	margin: rem(10px) 0;
+	@include font-family(CircularStd);
+	font-size: rem(18px);
+	font-weight: bold;
+	line-height: 1.33;
+	color: $text-color-soft;
+}
+
+%section-paragraph {
+	font-size: rem(17px);
+	line-height: 1.53;
+	color: $text-color-soft;
+	padding-bottom: rem(23px);
+}
+
+%section-sub-paragraph {
+	font-size: rem(15px);
+	color: $text-color-soft;
+}
+
+%btn {
+	@include btn;
+}
+
+%btn-small {
+	@include btn-padding($btn-padding-small);
+}
+
+%btn-medium {
+	@include btn-padding($btn-padding-medium);
+}
+
+%btn-large {
+	@include btn-padding($btn-padding-large);
+}
+
+%btn-outline-large {
+	@include btn-padding($btn-outline-padding-large);
+}
+
+%btn-default {
+	@include btn-primary($bg-color: $default-color, $color: #fff);
+}
+
+%btn-primary {
+	@include btn-primary;	
+	opacity: 0.9;
+}
+
+%btn-primary-active {
+	@include btn-primary($bg-color: $primary-color-strong, $color: #fff);
+}
+
+%btn-outline-primary {
+	@include btn-outline;
+}
+
+%btn-outline-primary-active {
+	@include btn-outline($border: 2px solid $primary-color-strong, $color: $primary-color-strong);
+}
+
+%btn-outline-default {
+	@include btn-outline($border: 2px solid $text-color-shade-1, $color: #d0d0d0);
+}
+
+%primary-color {
+	@include color($primary-color);
+}
+
+%secondary-color {
+	@include color($secondary-color);
+}
+
+%default-color {
+	@include color($default-color);
+}
+
+%background-image-other-property {
+	@include background-image-other-property;
+}
+

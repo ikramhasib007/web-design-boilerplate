@@ -1,0 +1,284 @@
+
+/** =========================================== 
+	================= CLASSES  ================
+	===========================================
+**/
+
+.flip {
+    @include transform(scaleX(-1));
+    @include filter(FlipH);
+}
+
+.container {
+	padding: $container-padding;
+}
+
+.disable {
+	cursor: not-allowed;
+	opacity: 0.55;
+}
+
+.btn {
+	@extend %btn;
+}
+
+.btn-large {
+	@extend %btn-large;
+}
+
+.btn-outline-large {
+	@extend %btn-outline-large;
+}
+
+.btn-primary {
+	@extend %btn-primary;
+}
+
+.btn-default {
+	@extend %btn-default;
+}
+
+.btn-primary-active {
+	@extend %btn-primary-active;
+}
+
+.btn-outline-primary {
+	@extend %btn-outline-primary;
+}
+
+.btn-outline-default {
+	@extend %btn-outline-default;
+}
+
+.btn-outline-primary-active {
+	@extend %btn-outline-primary-active;
+}
+
+.d-flex {
+	@extend %display-flex;
+	@extend %flex-direction-row;
+	@extend %width-100-percent;
+}
+.d-flex-column {
+	@extend %display-flex;
+	@extend %flex-direction-column;
+}
+.justify-between {
+	@extend %justify-content-space-between; 
+}
+.justify-center {
+	@extend %justify-content-center; 
+}
+.justify-around {
+	@extend %justify-content-space-around; 
+}
+.justify-end {
+	@extend %justify-content-flex-end; 
+}
+.justify-start {
+	@extend %justify-content-flex-start; 
+}
+.justify-self-start {
+	@extend %justify-self-flex-start; 
+}
+.justify-self-end {
+	@extend %justify-self-flex-end; 
+}
+.wrap {
+	@extend %flex-wrap; 
+}
+.nowrap {
+	@extend %flex-nowrap; 
+}
+.align-center {
+	@extend %align-items-center; 
+}
+.align-start {
+	@extend %align-items-flex-start; 
+}
+.align-end {
+	@extend %align-items-flex-end; 
+}
+.align-baseline {
+	@extend %align-items-baseline; 
+}
+.align-self-center {
+	@extend %align-self-center; 
+}
+.align-self-start {
+	@extend %align-self-flex-start; 
+}
+.align-self-end {
+	@extend %align-self-flex-end; 
+}
+
+div, p, span, h1, h2, h3, h4, h5, h6, label {
+	.p0 > & {
+		padding: 0;
+	}
+	.p > & {
+		padding: rem(16px);
+	}
+	.p2 > & {
+		padding: rem(32px);
+	}
+	.p3 > & {
+		padding: rem(48px);
+	}
+	.p4 > & {
+		padding: rem(64px);
+	}
+	.p-r0 > & {
+		padding-right: 0;
+	}
+	.p-r > & {
+		padding-right: rem(16px);
+	}
+	.p-r2 > & {
+		padding-right: rem(32px);
+	}
+	.p-r3 > & {
+		padding-right: rem(48px);
+	}
+	.p-r4 > & {
+		padding-right: rem(64px);
+	}
+	.p-l0 > & {
+		padding-left: 0;
+	}
+	.p-l > & {
+		padding-left: rem(16px);
+	}
+	.p-l2 > & {
+		padding-left: rem(32px);
+	}
+	.p-l3 > & {
+		padding-left: rem(48px);
+	}
+	.p-l4 > & {
+		padding-left: rem(64px);
+	}
+	.p-t0 > & {
+		padding-top: 0;
+	}
+	.p-t > & {
+		padding-top: rem(16px);
+	}
+	.p-t2 > & {
+		padding-top: rem(32px);
+	}
+	.p-t3 > & {
+		padding-top: rem(48px);
+	}
+	.p-t4 > & {
+		padding-top: rem(64px);
+	}
+	.p-b0 > & {
+		padding-bottom: 0;
+	}
+	.p-b > & {
+		padding-bottom: rem(16px);
+	}
+	.p-b2 > & {
+		padding-bottom: rem(32px);
+	}
+	.p-b3 > & {
+		padding-top: rem(48px);
+	}
+	.p-b4 > & {
+		padding-bottom: rem(64px);
+	}
+
+	.m0 > & {
+		margin: 0;
+	}
+	.m > & {
+		margin: rem(16px);
+	}
+	.m2 > & {
+		margin: rem(32px);
+	}
+	.m3 > & {
+		margin: rem(48px);
+	}
+	.m4 > & {
+		margin: rem(64px);
+	}
+	.m-r0 > & {
+		margin-right: 0;
+	}
+	.m-r > & {
+		margin-right: rem(16px);
+	}
+	.m-r2 > & {
+		margin-right: rem(32px);
+	}
+	.m-r3 > & {
+		margin-right: rem(48px);
+	}
+	.m-r4 > & {
+		margin-right: rem(64px);
+	}
+	.m-l0 > & {
+		margin-left: 0;
+	}
+	.m-l > & {
+		margin-left: rem(16px);
+	}
+	.m-l2 > & {
+		margin-left: rem(32px);
+	}
+	.m-l3 > & {
+		margin-left: rem(48px);
+	}
+	.m-l4 > & {
+		margin-left: rem(64px);
+	}
+	.m-t0 > & {
+		margin-top: 0;
+	}
+	.m-t > & {
+		margin-top: rem(16px);
+	}
+	.m-t2 > & {
+		margin-top: rem(32px);
+	}
+	.m-t3 > & {
+		margin-top: rem(48px);
+	}
+	.m-t4 > & {
+		margin-top: rem(64px);
+	}
+	.m-b0 > & {
+		margin-bottom: 0;
+	}
+	.m-b > & {
+		margin-bottom: rem(16px);
+	}
+	.m-b2 > & {
+		margin-bottom: rem(32px);
+	}
+	.m-b3 > & {
+		margin-top: rem(48px);
+	}
+	.m-b4 > & {
+		margin-bottom: rem(64px);
+	}
+
+}
+
+.facebook {
+  width: rem(32px);
+  height: rem(32px);
+  object-fit: contain;
+}
+.instagram {
+  width: rem(32px);
+  height: rem(32px);
+  object-fit: contain;
+}
+.twitter {
+  width: rem(32px);
+  height: rem(32px);
+  object-fit: contain;
+}

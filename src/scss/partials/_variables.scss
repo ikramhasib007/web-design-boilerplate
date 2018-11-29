@@ -1,0 +1,111 @@
+
+/*
+	********* ========= COLORS =========== *********
+*/ 
+$primary-color: #2ac6cc;
+$primary-color-strong: #0ca4ad;
+$primary-color-soft: #94e3e6;
+$primary-color-dark: #0f6e77;
+$primary-color-shade-1: #beeef0;
+$primary-color-shade-2: #d6f7fa;
+$primary-color-shade-3:#eef8fc;
+
+$primary-rgba: rgba(42, 198, 204, 1);
+$primary-rgba-soft: rgba(148, 227, 230, 1);
+
+$secondary-color: #246dc6;
+$secondary-color-grey: #5a6770;
+
+$default-color: #bcbcbc;
+
+$warning-color: #f1935d;
+// $warning-bg-color: ;
+// $warning-text-color: ;
+
+$danger-color: #ea425f;
+// $danger-bg-color: ;
+// $danger-text-color: ;
+
+$success-color: #00d18b;
+// $success-bg-color: ;
+// $success-text-color: ;
+
+$text-color: #404040;
+$text-color-dark: #212121;
+$text-color-soft: #717171;
+$text-color-shade-1: #bcbcbc;
+$text-color-shade-2: #e8e8e8;
+$text-color-shade-3: #f8f8f8;
+
+$placeholder-color: #d0d0d0;
+$dropdown-icon: #d8d8d8;
+
+$text-color-white: #f6f6f6;
+$text-color-white-shade: #e0e0e0;
+
+$box-background: #fafafa;
+$input-box-shadow: 0 0 2px 2px rgba(188, 188, 188, 0.25);
+$input-danger-box-shadow: 0 0 2px 2px rgba(234, 66, 95, 0.25);
+
+
+/*
+	********* ========= SIZES =========== *********
+*/ 
+$text-size: rem(15px);
+$large-text-size: rem(22px);
+
+$content-width: 1140px;
+$container-padding-left-right: 15vw; // (14.654vw) for 1140 screen size monitor. container width = 960px
+$container-padding-medium-left-right: 6vw;  // for medium screen. ipads
+$container-padding-small-left-right: 3.5vw;
+$container-padding: 0 $container-padding-left-right; // for 1140 screen size monitor. container width = 960px
+$container-padding-medium: 0 $container-padding-medium-left-right;  // for medium screen. ipads
+$container-padding-small: 0 $container-padding-small-left-right;  // for small screen. max size 680px
+$header-height: 80px;
+$footer-height: 379px;
+
+// Button sizes
+$btn-padding: rem(14px) rem(30px) rem(13px) rem(30px);
+$btn-padding-large: rem(19px) rem(35px) rem(18px) rem(35px);
+$btn-padding-medium: 12px 16px;
+$btn-padding-small: 12px 16px;
+
+
+$btn-outline-padding: rem(12px) rem(30px) rem(10.7px) rem(30px);
+
+$btn-outline-padding-large: rem(17px) rem(33px) rem(16px) rem(33px);
+$btn-outline-padding-medium: 12px 16px;
+$btn-outline-padding-small: 12px 16px;
+
+
+$input-height: 46px;
+$input-padding-medium: 9px 10px 8px 12px;
+$input-multi-select-padding-medium: 6px 7px 2px;
+
+/** ==========================================================================
+	=======================  Section Padding & Margin  =======================
+	==========================================================================	
+*/
+$section-padding-top: rem(100px);
+$section-padding-bottom: rem(100px);
+
+$section-padding-top-medium: rem(80px);
+$section-padding-bottom-medium: rem(80px);
+
+$section-padding-top-small: rem(50px);
+$section-padding-bottom-small: rem(50px);
+
+$section-padding-top-extra-small: rem(40px);
+$section-padding-bottom-extra-small: rem(40px);
+
+$section-margin-top: rem(100px);
+$section-margin-bottom: rem(100px);
+
+$section-margin-top-medium: rem(80px);
+$section-margin-bottom-medium: rem(80px);
+
+$section-margin-top-small: rem(50px);
+$section-margin-bottom-small: rem(50px);
+
+$section-margin-top-extra-small: rem(40px);
+$section-margin-bottom-extra-small: rem(40px);

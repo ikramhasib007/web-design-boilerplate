@@ -1,0 +1,109 @@
+@media only screen and (min-width: 800px) and (max-width: 900px){
+
+	
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1024px){
+	
+	
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+	
+	
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1300px){
+	
+	
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1400px){
+	
+	
+}
+
+@media only screen and (min-width: 1401px) and (max-width: 1600px){
+	
+	
+}
+
+@media only screen and (min-width: 1601px) and (max-width: 1700px){
+	
+	
+}
+/**	=============================================================== */
+// Larger screen. width 1366 < unlimited
+/**	=============================================================== */
+@media only screen and (min-width: 1367px) {
+	
+	
+}
+
+/**	=============================================================== */
+// Screen: 15.6-inches, 1366 x 768
+/**	=============================================================== */
+@media only screen and (max-width: 1366px) {
+	
+	// Start Components section
+	input, textarea {
+		padding: $input-padding-medium;
+	}
+	
+	.form-item+.error-no-label::after {
+		height: 16px;
+		width: 16px;
+		right: 12px;
+		top: 13px;
+		font-size: 80%
+	}
+	.form-item+.error::after {
+		height: 16px;
+		width: 16px;
+		right: 12px;
+		top: 34px;
+		font-size: 80%
+	}
+	.selectize-input {
+		padding: $input-padding-medium;
+	}
+	.selectize-control.single .selectize-input:after {
+		margin-top: -2px;
+	}
+	.selectize-control.multi .selectize-input.has-items {
+		padding: $input-multi-select-padding-medium;
+	}
+	.selectize-control.multi .selectize-input > div {
+		padding: 3px 7px;
+		margin: 0 4px 3px 0;
+	}
+	.selectize-control.plugin-remove_button [data-value] .remove {
+		padding: 4px 0 0 0;
+	}
+	// End of Components section
+
+}
+
+
+/**	=============================================================== */
+// All media queries for mobile and tabs
+/**	=============================================================== */
+
+@import "media-queries/small-screens";
+@import "media-queries/medium-screens";
+@import "media-queries/large-screens";
+
+
+@import "media-queries/iphone-6-to-8-plus-landscape";
+@import "media-queries/iphone-x-landscape";
+@import "media-queries/ipad";
+@import "media-queries/ipad-landscape";
+@import "media-queries/galaxy-s5-landscape";
+@import "media-queries/google-pixel-2-landscape";
+@import "media-queries/google-pixel-2-xl-landscape";
+@import "media-queries/ipad-pro";
+@import "media-queries/ipad-pro-landscape";
+
+
+/* End of navbar media query */

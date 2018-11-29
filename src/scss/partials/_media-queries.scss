@@ -1,0 +1,110 @@
+@mixin tiny-screens() {
+	@media only screen and (max-width: 480px) {
+		@content;
+	}
+}
+
+@mixin small-screens() {
+	@media only screen and (max-width: 680px) {
+		@content;
+	}
+}
+
+@mixin medium-screens() {
+	@media only screen and (min-width: 681px) and (max-width: 1024px) {
+		@content;
+	}
+}
+
+// 14 inch monitor
+@mixin large-screens() {
+	@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+		@content;
+	}
+}
+
+@mixin extra-large-screens() {
+	@media only screen and (min-width: 1401px) {
+		@content;
+	}
+}
+
+@mixin galaxy-s5-landscape() {
+	@media only screen 
+  	and (min-device-width: 360px) 
+  	and (max-device-width: 640px) 
+  	and (-webkit-min-device-pixel-ratio: 3) 
+  	and (orientation: landscape) {
+	  @content;
+	}
+}
+
+@mixin google-pixel-2-landscape() {
+	@media only screen and (min-device-width: 731px) and (device-height: 411px) and (orientation: landscape) {
+		@content;
+	}
+}
+
+@mixin google-pixel-2-xl-landscape() {
+	@media only screen and (min-device-width: 823px) and (orientation: landscape) { 
+		@content;
+	}
+}
+
+@mixin iphone-6-to-8-plus-landscape() {
+	@media only screen and (min-device-width: 414px)
+	 and (max-device-width: 736px)
+	 and (-webkit-min-device-pixel-ratio: 3)
+	 and (orientation: landscape) { 
+		@content;
+	}
+}
+
+@mixin iphone-x-landscape() {
+	@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-width: 812px) 
+	and (-webkit-min-device-pixel-ratio: 3)
+	and (orientation: landscape) { 
+		@content;
+	}
+}
+
+@mixin ipad() {
+	@media only screen 
+	  and (min-device-width: 768px) 
+	  and (max-device-width: 1024px) 
+	  and (orientation: portrait) 
+	  and (-webkit-min-device-pixel-ratio: 1) {
+		@content;
+	  }
+}
+
+@mixin ipad-landscape() {
+	@media only screen 
+	  and (min-device-width: 768px) 
+	  and (max-device-width: 1024px) 
+	  and (-webkit-min-device-pixel-ratio: 1) 
+	  and (orientation: landscape) {
+		@content;
+	}
+}
+
+@mixin ipad-pro() {
+	@media only screen 
+	  and (min-device-width: 1024px) 
+	  and (max-device-width: 1366px)
+	  and (-webkit-min-device-pixel-ratio: 2) {
+		@content;
+	  }
+}
+
+@mixin ipad-pro-landscape() {
+	@media only screen 
+	  and (min-device-width: 1024px) 
+	  and (max-device-width: 1366px) 
+	  and (-webkit-min-device-pixel-ratio: 2) 
+	  and (orientation: landscape) {
+		@content;
+	  }
+}

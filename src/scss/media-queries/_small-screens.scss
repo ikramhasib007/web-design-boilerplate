@@ -1,0 +1,14 @@
+/* For all small devices. (max-width: 680px) */
+@include small-screens {
+
+	%small-display-flex {
+		@include display-flex;
+	}
+	%small-flex-direction-column {
+		@include flex-direction-column;
+	}
+	.container {
+		padding: $container-padding-small;
+	}
+	
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Components - Smart Launder</title>
+		<!--[if IE]><link rel="shortcut icon" href="assets/img/logo.ico"><![endif]-->
+		<link rel="icon" href="assets/img/logo.png">
+
+		<link rel="stylesheet" href="assets/vendors/css/circularstd.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/slick/slick.css">
+		<link rel="stylesheet" href="assets/vendors/selectize/css/selectize.css">
+
+		<link rel="stylesheet" href="assets/css/main.css">
+
+	</head>
+	<body>
+		<header class="container">
+			<nav>
+				Nav
+			</nav>
+
+			<div class="nav-right">
+				<button class="btn btn-outline-primary">LOGIN/SIGNUP</button>
+				<div class="dropdown">
+					<img src="assets/img/user.svg" class="user" alt="User"/>
+				</div>
+			</div>
+		</header>
+
+		<!-- ########################################################################### -->
+		<!-- ###########################  CONTENT SECTION ############################### -->
+		<!-- ########################################################################### -->
+
+		<section class="container">
+			<br/>
+			<br/>
+			<br/>
+            <br/>
+            <h1>Buttons</h1>
+            <hr/>
+            <br/>
+            <div style="display: flex; flex-wrap: wrap;">
+                <div style="flex-basis: 50%;">
+                    <button class="btn btn-default">BUTTON TEXT</button><br/><br/>
+                    <button class="btn btn-primary">BUTTON TEXT</button><br/><br/>
+                    <button class="btn btn-primary disable">BUTTON TEXT</button><br/><br/>
+                    <button class="btn btn-primary btn-primary-active">BUTTON TEXT</button><br/><br/>
+                </div>
+                <div style="flex-basis: 50%;">
+                    <button class="btn btn-outline-default">BUTTON TEXT</button><br/><br/>
+                    <button class="btn btn-outline-primary">BUTTON TEXT</button><br/><br/>
+                    <button class="btn btn-outline-primary disable">BUTTON TEXT</button><br/><br/>
+                    <button class="btn btn-outline-primary btn-outline-primary-active">BUTTON TEXT</button><br/><br/>
+                </div>
+            </div>
+			<br/>
+			<br/>
+			<br/>
+            <br/>
+            <h1>Components</h1>
+            <hr/>
+            <br/>
+
+            <label>Label</label>
+            <input type="text" disabled placeholder="Input Text" value="New Text"/>
+            <label>Label</label>
+            <input type="text" placeholder="Input Text"/>
+            <label>Label</label>
+            <input type="text" placeholder="Input Text" value="SSSSS ssssssss Input Text"/>
+            <label>Label</label>
+			<input type="email" placeholder="Input Text" value="Input Text"/>
+			<label>Label</label>
+			<select disabled>
+				<option value="">Select Dropdown</option>
+				<option>Javascript</option>
+				<option>Node.js</option>
+			</select>
+			<label>Label</label>
+			<select>
+				<option value="">Select Dropdown Awesome</option>
+				<option>Javascript</option>
+				<option>Node.js</option>
+				<option>Amber.js</option>
+				<option>React.js</option>
+				<option>Babel.js</option>
+				<option>Webpack.js</option>
+			</select>
+			
+			<label>Multiple Select</label>
+			<input type="text" id="multi-input" placeholder="Multiple Select"/>
+			<label>Label</label>
+			<div class="d-flex m-r2">
+				<div class="smart-checkbox">
+					<input type="checkbox" disabled id="nodejs"/>
+					<label for="nodejs">Node.js</label>
+				</div>
+				<div class="smart-checkbox">
+					<input type="checkbox" id="python"/>
+					<label for="python">Python</label>
+				</div>
+				<div class="smart-checkbox">
+					<input type="checkbox" checked id="vuejs"/>
+					<label for="vuejs">Vue.js</label>
+				</div>
+			</div>
+
+            <h2>Forms</h2>
+            <form>
+                <div class="form-item">
+                    <label>Label</label>
+                    <input type="text" placeholder="Input Text" />
+                </div>
+                <div class="form-item">
+					<div class="d-flex justify-between">
+						<label>Label</label>
+						<span>optional</span>
+					</div>
+                    <input type="text" placeholder="Input Text" />
+                </div>
+                <div class="form-item error-no-label">
+                    <input type="email" placeholder="Input Text" value="Input Text" />
+				</div>
+                <div class="form-item error">
+                    <label>Label</label>
+                    <input type="email" placeholder="Input Text" value="Input Text" />
+				</div>
+				
+                <div class="form-item">
+					<label>Label</label>
+					<select>
+						<option value="">Select Dropdown</option>
+						<option>Javascript</option>
+						<option>Babel.js</option>
+					</select>
+				</div>
+                <div class="form-item">
+					<label>Label</label>
+					<select disabled>
+						<option value="">Select Dropdown</option>
+						<option>Javascript</option>
+						<option>Javascript</option>
+					</select>
+				</div>
+
+				<div class="form-item">
+					<label>Label</label>
+					<div class="smart-checkbox">
+						<input type="checkbox" id="javascript"/>
+						<label for="javascript">Javascript</label>
+					</div>
+					<div class="smart-checkbox">
+						<input type="checkbox" id="reactjs"/>
+						<label for="reactjs">React.js</label>
+					</div>
+					<div class="smart-checkbox">
+						<input type="checkbox" checked id="nextjs"/>
+						<label for="nextjs">Next.js</label>
+					</div>
+				</div>
+				<div class="form-item">
+					<label>Label</label>
+					<div class="d-flex m-r2">
+						<div class="smart-checkbox">
+							<input type="checkbox" id="expressjs"/>
+							<label for="expressjs">Express.js</label>
+						</div>
+						<div class="smart-checkbox">
+							<input type="checkbox" id="hapijs"/>
+							<label for="hapijs">Hapi.js</label>
+						</div>
+						<div class="smart-checkbox">
+							<input type="checkbox" checked id="totaljs"/>
+							<label for="totaljs">Total.js</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-item">
+					<label>Label</label>
+					<div class="smart-radio">
+						<input type="radio" name="javascript" id="babeljs"/>
+						<label for="babeljs">Babel.js</label>
+					</div>
+					<div class="smart-radio">
+						<input type="radio" name="javascript" checked id="webpackjs"/>
+						<label for="webpackjs">Webpack.js</label>
+					</div>
+					<div class="smart-radio">
+						<input type="radio" name="javascript" disabled id="mochajs"/>
+						<label for="mochajs">Mocha.js</label>
+					</div>
+				</div>
+				<div class="form-item">
+					<label>Label</label>
+					<div class="d-flex m-r2">
+						<div class="smart-radio">
+							<input type="radio" name="javascript-framework" id="commonjs"/>
+							<label for="commonjs">Common.js</label>
+						</div>
+						<div class="smart-radio">
+							<input type="radio" name="javascript-framework" checked id="firebugjs"/>
+							<label for="firebugjs">Firebug.js</label>
+						</div>
+						<div class="smart-radio">
+							<input type="radio" name="javascript-framework" disabled id="dartjs"/>
+							<label for="dartjs">Dart.js</label>
+						</div>
+					</div>
+				</div>
+				
+            </form>
+
+            <br/>
+			<br/>
+			<br/>
+			<br/>
+		</section>
+
+		<!-- ########################################################################### -->
+		<!-- ###########################  FOOTER SECTION ############################### -->
+		<!-- ########################################################################### -->
+
+		<footer class="container">
+			<div class="footer">
+				
+			</div>
+			<hr/>
+			<p>&copy; 2018 Codemark. All rights reserved.</p>
+		</footer>
+
+		<!-- Only for slick at homepage -->
+		<script type="text/javascript" src="assets/vendors/js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/slick/slick.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/selectize/js/standalone/selectize.js"></script>
+
+		<!-- Only for slick at homepage -->
+		<script type="text/javascript" src="assets/js/main.js"></script>
+		<script type="text/javascript" src="assets/js/components.js"></script>
+	
+	</body>
+</html>

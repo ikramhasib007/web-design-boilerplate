@@ -1,0 +1,79 @@
+@import "partials/normalize";
+@import "partials/functions";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/extends";
+@import "partials/animations";
+
+@include google-fonts('Archivo');
+@include fancy-links;
+// @include apply-to-ie-6 {
+// 	body {
+// 		font-size: 125%;
+// 	}
+// }
+
+html, input {
+	@include font-family('Archivo');
+	font: {
+		size: $text-size;
+		weight: normal; 
+		style: normal;
+		stretch: normal;
+	}
+	line-height: 1.6;
+	letter-spacing: normal;
+	color: $text-color;
+}
+
+body {
+	@extend %box-sizing-border-box;
+	@extend %display-flex;
+	@extend %flex-direction-column;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	@extend %no-margin;
+}
+
+ul {
+	list-style: none;
+	@extend %no-padding;
+	@extend %no-margin;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+hr { 
+	border:none;
+	border-top: 1px solid $text-color-shade-2;
+	height: 1px;
+}
+
+button {
+	@extend %no-padding;
+	@extend %no-margin;
+	@extend %align-items-center;
+}
+
+// All Components. such as input, textarea, select, input[type=checkbox], input[type=radio], etc..
+@import "components";
+
+// All Classes. such as d-flex, justify-center, etc..
+@import "classes";
+
+
+// All media queries import here
+@import "media-queries";
+
+/* ===================== Header and Footer ========================== */
+@import "pages/header";
+@import "pages/footer";
+
+/* ===================== Pages ========================== */
+@import "pages/home";
+@import "pages/about-us";

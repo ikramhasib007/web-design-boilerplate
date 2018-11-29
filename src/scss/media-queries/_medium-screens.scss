@@ -1,0 +1,13 @@
+/* For medium screens. (min-width: 681px) and (max-width: 1024px) */
+@include medium-screens {
+	%medium-display-flex {
+		@include display-flex;
+	}
+	%medium-flex-direction-column {
+		@include flex-direction-column;
+	}
+	.container {
+		padding: $container-padding-medium;
+	}
+
+}
